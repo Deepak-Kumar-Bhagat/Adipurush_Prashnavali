@@ -1,0 +1,76 @@
+
+
+.container{
+    background-image: url(../images/ramface1.png);
+    background-position: center;
+    /* background-size:cover; */
+    background-repeat: no-repeat; 
+}
+
+.footer{
+    paddingTop:15px;
+    background:rgba(248, 250, 252,.7);
+    box-shadow: 0px 0px 15px #df815f;
+    opacity:0.7;
+} 
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+    color: "#cb4154";
+    font-family:"Josefin Slab";
+    }
+    @keyframes blinker {
+    80% {
+    opacity: 0;
+    }
+}
+
+.questionbox{
+    box-shadow:0px 0px 12px #df815f ;
+}
+
+.letterbox:hover{
+   background-color:#008000 ;
+   color:white;
+   cursor: pointer;
+   opacity:0.8
+}
+
+.navoption:hover{
+   color:#ff4500
+}
+
+.link:hover{
+    color: red;
+}
+
+.audio{
+    opacity:0.3;
+    width:170px;
+    height:20px;
+    outline: none;
+}
+ 
+audio::-webkit-media-controls-panel {
+  -webkit-justify-content: left;
+  /* height: 25px;
+  width: 25px; */
+}
+
+/* Removes the timeline */
+audio::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+/* Removes the time stamp */
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+/* Remove play-pause button */
+/* audio::-webkit-media-controls-play-button{
+    display: none;
+} */
+
