@@ -14,14 +14,14 @@ function About() {
   
   return (
     <div>
-        <Box sx={{width:"100%",backgroundColor:"rgba(248, 250, 252,.7)"}}>
+        <Box sx={{width:"100%",backgroundColor:"rgba(248, 250, 252,.7)",height:"100vh",display:"flex",flexDirection:"column",justifyContent:"space-between"}}>
             {/* <Navbar/> */}
-            <Box className="container" sx={{width:"100%"}}>
-                <Box sx={{background:"rgba(248, 250, 252,.7)",textAlign:"center",padding:"4% 5% 3% 5%"}}>
+            <Box className="container" sx={{width:"100%",margin:"auto"}}>
+                <Box sx={{background:"rgba(248, 250, 252,.7)",display:"flex",flexDirection:"column",textAlign:"center",padding:"6% 4% 3% 4%",justifyContent:'center'}}>
 
                     <Typography sx={{color:"#ff4500",fontWeight:"600",marginBottom:"20px"}}>💮|| जय श्री राम ||💮</Typography>
 
-                    <Typography sx={{color:"#cb4154",fontWeight:"700",marginBottom:"20px",fontFamily:"Josefin Slab",fontSize:"1.5rem"}}>About Shree Rama Prashnavali</Typography>
+                    <Typography sx={{color:"#cb4154",fontWeight:"700",marginBottom:"20px",fontFamily:"Josefin Slab"}} fontSize={{lg: 25,md: 25,sm: 22,xs: 22}}>About Shree Rama Prashnavali</Typography>
 
                     <Typography sx={{color:"#ff4500",fontWeight:"500",marginBottom:"20px",fontFamily:"Poppins",fontSize:"1.1rem",textAlign:"left"}}><b>Shree Rama Prashnavali</b> or <b>Ramshalaka</b> is an extract from <b>'Shri Ram Charit Manas'</b>, authored by the Saint <b>Goswami Tulsidas</b>. <b>'Shri Ram Charit Manas'</b>, also popularly known as <b>'Ramayana'</b> is a Holy book of <b>Hindus</b>. <b>Ramayana</b> describes the life and times of <b>Lord Rama</b>, the seventh incarnation of <b>Lord Vishnu</b>.</Typography>
 
@@ -29,7 +29,7 @@ function About() {
 
                     <Typography sx={{color:"#ff4500",fontWeight:"500",marginBottom:"30px",fontFamily:"Poppins",fontSize:"1.1rem",textAlign:"left"}}><b>Shree Rama Prashnavali</b> is a 15x15 grid. Each square in the grid has one <b>Akshar</b> (Hindi alphabet) from nine <b>Chopais</b> (couplets) of <b>Shri Ram Charit Manas</b>. As per the procedure laid down in <b>Shri Ram Charit Manas</b>, the user has to close his / her eyes and put his / her finger on the grid. The <b>akshars</b> from every ninth square starting from the square on which finger was placed by the user are taken and joined in a sequence. This forms one <b>Chopai</b> from <b>'Shri Ram Cahrit Manas'</b>. The answer to the question asked is based on the <b>Chopai</b> so formed.</Typography>
 
-                    <Typography sx={{color:"#cb4154",fontWeight:"600",marginBottom:"15px",fontFamily:"Josefin Slab",fontSize:"1.4rem",textAlign:"left"}}>How to Use Shree Rama Prashnavali</Typography>
+                    <Typography sx={{color:"#cb4154",fontWeight:"600",marginBottom:"15px",fontFamily:"Josefin Slab",textAlign:"left"}} fontSize={{lg: 25,md: 25,sm: 22,xs: 22}}>How to Use Shree Rama Prashnavali</Typography>
 
                     <Typography sx={{color:"#ff4500",fontWeight:"500",marginBottom:"10px",fontFamily:"Poppins",fontSize:"1.1rem",textAlign:"left"}}><spam style={{color:"#ff4500",fontWeight:"600"}}>1. </spam>First remember <b>Lord Shri Rama</b> in your mind and pray him to give answer ( don't disclose the Question to anyone before asking to <b>Shri Rama</b> ).</Typography>
 
@@ -43,7 +43,7 @@ function About() {
 
                      <Typography sx={{color:"#ff4500",fontWeight:"600",marginBottom:"20px",fontFamily:"Poppins",fontSize:"1.1rem",textAlign:"left"}}>Its all about faith in the almighty and faith is tested for only once. So try to avoid the verification by repeating the process again and again. You can take these words for caution.</Typography>
 
-                    <Typography className="blink" sx={{color:"#cb4154",fontWeight:"600",fontFamily:"Josefin Slab",fontSize:"1.4rem",margin:"20px 5px 0px 5px",cursor:"pointer",marginBottom:"20px"}} onClick={()=>Navigate('/')}> Ask your question now with full confidence </Typography>
+                    <Typography className="blink" sx={{color:"#cb4154",fontWeight:"600",fontFamily:"Josefin Slab",margin:"20px 5px 0px 5px",cursor:"pointer",marginBottom:"20px"}} fontSize={{lg: 22,md: 20,sm: 20,xs: 18}} onClick={()=>Navigate('/')}> Ask your question now with full confidence </Typography>
                 </Box>
             </Box>
             <Footer/>

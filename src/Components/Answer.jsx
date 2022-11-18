@@ -24,10 +24,10 @@ function Answer() {
 
   return (
     <div>
-        <Box sx={{width:"100%",backgroundColor:"rgba(248, 250, 252,.7)"}}>
+        <Box sx={{width:"100%",backgroundColor:"rgba(248, 250, 252,.7)",height:"100vh",display:"flex",flexDirection:"column",justifyContent:"space-between"}}>
             {/* <Navbar/> */}
-            <Box className="container" sx={{width:"100%"}}>
-                <Box sx={{background:"rgba(248, 250, 252,.7)",textAlign:"center",padding:"4% 3% 3% 3%"}} style={loading?{height:"60vh"}:{height:"auto"}}>
+            <Box className="container" sx={{width:"100%",margin:"auto"}}>
+                <Box sx={{background:"rgba(248, 250, 252,.7)",display:"flex",flexDirection:"column",textAlign:"center",padding:"6% 4% 3% 4%",justifyContent:'center'}} style={loading?{height:"60vh"}:{height:"auto"}}>
                     {
                    loading?<Box className='flex justify-center mt-16 pt-16 ml-6' sx={{display:"flex",justifyContent:"center",marginTop:"8%"}}>
                                 <Circles
@@ -40,8 +40,8 @@ function Answer() {
                             </Box>: 
                 <Box className=''>
                 <Typography sx={{color:"#ff4500",fontWeight:"600",marginBottom:"10px"}}>💮|| जय श्री राम ||💮</Typography>
-                <Typography sx={{color:"#cb4154",fontWeight:"700",marginBottom:"10px",fontFamily:"Josefin Slab",fontSize:"1.6rem"}}>SHREE RAMACHARITAMANAS PRASHNAVALI ANSWER</Typography>
-                <Typography sx={{color:"#b22222",fontWeight:"600",marginBottom:"10px",fontFamily:"Josefin Slab",fontSize:"1.5rem",opacity:"0.7"}}>Lord Rama's answer to your Question</Typography>
+                <Typography sx={{color:"#cb4154",fontWeight:"700",marginBottom:"10px",fontFamily:"Josefin Slab"}} fontSize={{lg: 25,md: 25,sm: 23,xs: 23}}>SHREE RAMACHARITAMANAS PRASHNAVALI ANSWER</Typography>
+                <Typography sx={{color:"#b22222",fontWeight:"600",marginBottom:"10px",fontFamily:"Josefin Slab",opacity:"0.7"}} fontSize={{lg: 25,md: 25,sm: 22,xs: 22}}>Lord Rama's answer to your Question</Typography>
                 <Typography sx={{color:"#ff4500",fontWeight:"600",marginBottom:"10px",fontFamily:"Josefin Slab",fontSize:"1.4rem"}}>Answer From {temp<0?"":
                 data[temp].kand}</Typography>
                 {
@@ -54,7 +54,7 @@ function Answer() {
                 <Typography sx={{color:"#ff4500",fontWeight:"500",marginBottom:"10px",fontFamily:"Poppins",fontSize:"1.1rem"}}><spam style={{color:"#ff4500",fontWeight:"600"}}>चौपाई : </spam>{temp<0?"":
                 data[temp].hchaupai}</Typography>
                 <Typography sx={{color:"#ff4500",fontWeight:"500",marginBottom:"10px",fontFamily:"Poppins",fontSize:"1.1rem"}}><spam style={{color:"#ff4500",fontWeight:"600"}}>राम चरित मानस में स्थान : </spam>{temp<0?"":
-                data[temp].hchaupai}</Typography>
+                data[temp].hplace}</Typography>
 
                 {
                    temp>=0 && data[temp].colour===0?

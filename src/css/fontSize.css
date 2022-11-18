@@ -1,0 +1,21 @@
+
+
+.omlogo{
+    width:4.375rem;
+}
+.ombox{
+  text-align: center;
+}
+@media (max-width:1500px){
+  .ombox {
+    display:none;
+  }
+}
+@media (max-width: 900px) {
+  .omlogo {
+    display:none;
+  }
+   .ombox {
+    display:block;
+  }
+}

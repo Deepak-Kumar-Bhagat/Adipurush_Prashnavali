@@ -1,4 +1,19 @@
+.navbar {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+}
 
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.letterbox{
+  width:2.8125rem;
+  height:2.0625rem;
+}
 
 .container{
     background-image: url(../images/ramface1.png);
@@ -50,6 +65,21 @@
     height:20px;
     outline: none;
 }
+
+.dialogebox{
+  justify-content:center;
+  align-items:center;
+  padding:1% 0% 1% 0%;
+}
+
+.musicbox{
+  width:160px;
+  text-align:right;
+  position:absolute;
+  top:18%;
+  left:0%;
+  z-index:1
+}
  
 audio::-webkit-media-controls-panel {
   -webkit-justify-content: left;
@@ -69,8 +99,94 @@ audio::-webkit-media-controls-current-time-display {
 audio::-webkit-media-controls-time-remaining-display {
   display: none;
 }
-/* Remove play-pause button */
-/* audio::-webkit-media-controls-play-button{
+
+@media (max-width:900px){
+  .dialogebox{
+    padding:0% 4% 4% 4%;
+  }
+  .modalbox{
+    width:100%;
+  }
+}
+@media (max-width:750px){
+  .letterbox{
+    width:2.5rem;
+    height:1.75rem;
+    font-size: 16px;
+  }
+}
+
+@media (max-width:650px){
+  .letterbox{
+    width:2.1875rem;
+    height:1.75rem;
+    font-size: 16px;
+  }
+  .musicbox{
+    top:16%;
+  }
+}
+@media (max-width:575px){
+  .letterbox{
+    width:1.875rem;
+    height:1.4375rem;
+    font-size: 14px;
+  }
+}
+@media (max-width:500px){
+  .letterbox{
+    width:1.5625rem;
+    height:1.4375rem;
+    font-size: 14px;
+  }
+  .musicbox{
+    top:15%;
+  }
+}
+@media (max-width:430px){
+  .letterbox{
+    width:1.25rem;
+    height:1.4375rem;
+    font-size: 12px;
+  }
+  audio::-webkit-media-controls-mute-button{
     display: none;
-} */
+  }
+  audio::-webkit-media-controls-volume-slider{
+    display: none;
+  }
+  .musicbox{
+    width:50px;
+    display:none;
+  } 
+}
+@media (max-width:400px){
+  
+  audio::-webkit-media-controls-mute-button{
+    display: none;
+  }
+  audio::-webkit-media-controls-volume-slider{
+    display: none;
+  }
+  .musicbox{
+    width:50px;
+    display:none;
+  } 
+}
+
+@media (max-width:340px){
+  .letterbox{
+    width:1.1rem;
+    height:1.3125rem;
+    font-size: 11px;
+  }
+}
+@media (max-width:300px){
+  .letterbox{
+    width:1rem;
+    height:1.20rem;
+    font-size: 10px;
+  }
+}
+
 

@@ -36,18 +36,18 @@ function Question() {
 
   return ( 
     <div>
-        <Box sx={{width:"100%",backgroundColor:"rgba(248, 250, 252,.7)"}}>
+        <Box sx={{width:"100%",backgroundColor:"rgba(248, 250, 252,.7)",height:"100vh",display:"flex",flexDirection:"column",justifyContent:"space-between"}}>
             {/* <Navbar/> */}
             {/* <Typography sx={{color:"#ff4500",fontWeight:"600",marginBottom:"10px"}}>💮|| जय श्री राम ||💮</Typography> */}
-            <Box className="container" sx={{width:"100%"}}>
-                <Box sx={{background:"rgba(248, 250, 252,.7)",textAlign:"center",padding:"4% 3% 3% 3%",display:"flex",justifyContent:"center"}}>
-                    <Box className="questionbox" sx={{borderTop:"4px solid #ff8c00",borderBottom:"2px solid #ff8c00",borderLeft:"4px solid #ff8c00",borderRight:"2px solid #ff8c00",dispaly:"flex",flexDirection:"col"}}>
+            <Box className="container" sx={{width:"100%",margin:"auto",border:"1px solid red"}}>
+                <Box sx={{background:"rgba(248, 250, 252,.7)",display:"flex",alignItems:"center",padding:"6% 4% 3% 4%",justifyContent:'center',border:"1px solid green"}}>
+                    <Box className="questionbox" sx={{borderTop:"4px solid #ff8c00",borderBottom:"2px solid #ff8c00",borderLeft:"4px solid #ff8c00",borderRight:"2px solid #ff8c00",dispaly:"flex",flexDirection:"col",border:"1px solid black"}}>
                         {
                             row.map((ele)=>{
                                 return <Box sx={{display:"flex",borderBottom:"2px solid #ff8c00",width:"100%"}}>
                                     {
                                        col.map((val)=>{
-                                    return <Box className='letterbox' sx={{borderRight:"2px solid #ff8c00",textAlign:"center",color:"#ff8c00",width:"45px",height:"33px",display:"flex",alignItems:"center",justifyContent:"center",fontWeight:"600"}} onClick={()=>{
+                                    return <Box className='letterbox' sx={{borderRight:"2px solid #ff8c00",textAlign:"center",color:"#ff8c00",display:"flex",alignItems:"center",justifyContent:"center",fontWeight:"600"}} onClick={()=>{
                                     //setletter(ele*15+val);
                                     letter=ele*15+val;
                                     Navigate(`/answer/${letter}`);

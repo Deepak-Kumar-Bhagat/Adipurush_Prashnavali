@@ -53,15 +53,15 @@ function Contact() {
  
   return ( 
     <div>
-        <Box sx={{width:"100%",backgroundColor:"rgba(248, 250, 252,.7)"}}>
+        <Box sx={{width:"100%",backgroundColor:"rgba(248, 250, 252,.7)",height:"100vh",display:"flex",flexDirection:"column",justifyContent:"space-between"}}>
             {/* <Navbar/> */}
-            <Box className="container" sx={{width:"100%"}}>
-                <Box sx={{background:"rgba(248, 250, 252,.7)",textAlign:"center",padding:"4% 3% 3% 3%"}}>
+            <Box className="container" sx={{width:"100%",margin:"auto"}}>
+                <Box sx={{background:"rgba(248, 250, 252,.7)",display:"flex",flexDirection:"column",textAlign:"center",padding:"6% 4% 3% 4%",justifyContent:'center'}}>
                     <Typography sx={{color:"#ff4500",fontWeight:"600",marginBottom:"20px"}}>💮|| जय श्री राम ||💮</Typography>
                     <Typography sx={{color:"#cb4154",fontWeight:"700",marginBottom:"10px",fontFamily:"Josefin Slab",fontSize:"1.5rem"}}>CONTACT US</Typography>
-                    <Typography sx={{color:"#ff4500",fontWeight:"600",marginBottom:"40px",fontFamily:"Josefin Slab",fontSize:"1.4rem"}}>Reach out with any suggestions you have.</Typography>
+                    <Typography sx={{color:"#ff4500",fontWeight:"600",marginBottom:"40px",fontFamily:"Josefin Slab"}} fontSize={{lg: 22,md: 22,sm: 22,xs: 20}}>Reach out with any suggestions you have.</Typography>
                     <form onSubmit={(e)=>handleChange(e)}>
-                    <Box sx={{display:"flex",justifyContent:"center",margin:"20px 0px 0px 0px"}}>
+                    <Box className="contactbox" sx={{display:"flex",justifyContent:"center",margin:"20px 0px 0px 0px"}}>
                       <Stack directio="col" spacing={4} sx={{width:"600px"}}>
                         <TextField variant="standard" color="warning" focused placeholder="Name *" required type="string" sx={{Color:'#ff8c00'}} value={name} onChange={(e)=>{setname(e.target.value)}}/>
                         <TextField variant="standard" color="warning" focused placeholder="Email *" required type="email" sx={{color:'#ff8c00'}} value={email} onChange={(e)=>{setemail(e.target.value)}}/>
@@ -96,7 +96,19 @@ function Contact() {
              pt: 3,
              px: 3,
              pb: 1.5,
-             textAlign:"center"
+             textAlign:"center",
+            '@media (max-width: 900px)' : {
+              width: '45%'
+            },
+            '@media (max-width: 800px)' : {
+              width: '35%'
+            },
+            '@media (max-width: 600px)' : {
+              width: '55%'
+            },
+             '@media (max-width: 400px)' : {
+              width: '75%'
+            },
             }}>
            <Typography sx={{color:"#ff4500",fontWeight:"600",marginBottom:"10px",fontSize:"0.8rem"}}>💮|| जय श्री राम ||💮</Typography>
           <Typography sx={{color:"#ff4500",fontWeight:"500",marginBottom:"20px",fontFamily:"Poppins",fontSize:"1.2rem"}}>Thank you ! for your valuable suggestion !!</Typography>
